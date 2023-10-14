@@ -1,0 +1,220 @@
+@font-face {
+  font-family: manuka;
+  font-weight: 700;
+  src: url(./manuka-bold.ttf);
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat';
+  background: transparent url('./img/Wallpaper.jpg') ;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #879981;
+  position: absolute;
+  transition: 20ms linear;
+  z-index: 5;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 325px;
+
+  
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo {
+  height: 60px;
+  width: 115%;
+  position: fixed;
+  z-index: 9;
+  padding: 1vw 3vw;
+  font-size: xxx-large;
+  font-weight: 600;
+  font-family: manuka;
+  font-size: 50px;
+}
+
+.menu-links ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.cart {
+  font-size: 40px;
+}
+
+.content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: -1;
+}
+
+.title {
+  flex: 0 0 100%;
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tagline {
+  flex: 1;
+  font-size: 30px;
+  color: #000000;
+}
+
+.pages {
+  flex: 0;
+  letter-spacing: 5px;
+  color: #999;
+}
+
+.pages span {
+  font-size: 60px;
+  color: #000;
+  font-weight: 600;
+}
+
+.more {
+  flex: 1;
+}
+
+.more a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+
+
+.desc {
+  word-spacing: 5px;
+  font-family: manuka;
+  /* margin-bottom: 5px; */
+  font-weight: 600;
+  flex: 0 0 30%;
+}
+
+.desc p:nth-child(1) {
+  font-size: 40px;
+  
+}
+
+.desc p:nth-child(2) {
+  font-size: 20px;
+}
+
+.desc span {
+  color: #124e61;
+
+}
+
+.juice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.juice img {
+  animation: float 4s ease-in-out infinite;
+  max-height: 600px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -46%);
+  }
+  50% {
+    transform: translate(-50%, -52%);
+  }
+  100% {
+    transform: translate(-50%, -46%);
+  }
+}
+
+.food {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.food img {
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.food .layer:nth-child(1) {
+  top: -100px !important;
+  left: -480px !important;
+}
+
+.food .layer:nth-child(2) {
+  top: 200px !important;
+  left: -320px !important;
+}
+
+.food .layer:nth-child(3) {
+  top: -250px !important;
+  left: 160px !important;  
+}
+
+.food .layer:nth-child(4) {
+  top: -12px !important;
+  left: 300px !important;
+}
+
+.shifter .prev {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+}
+
+.shifter .next {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+}
+
+.shifter button {
+  border: 1px solid #999;
+  background: transparent;
+  padding: 20px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.shifter button:hover {
+  color: #fff;
+  background: #000;
+}
